@@ -1,0 +1,6 @@
+eureka:
+       instance:
+         #以ip地址注册
+         prefer-ip-address: true
+         hostname: ${spring.cloud.client.ipAddress}
+         instance-id: ${spring.cloud.alient.ipAddress}:${server.port}
